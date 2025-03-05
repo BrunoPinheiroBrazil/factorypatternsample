@@ -15,7 +15,7 @@ Este projeto demonstra a implementação do padrão de projeto Factory para integra
 * Um editor de código (Visual Studio, VS Code, etc.).
 * Um cliente REST (Swagger, Postman, etc.).
 
-## Como Executar o Projeto
+## Como Executar o Projeto (Português)
 
 1.  Clone o repositório:
 
@@ -38,7 +38,7 @@ Este projeto demonstra a implementação do padrão de projeto Factory para integra
 
 4.  A API estará disponível em `http://localhost:[porta]`.
 
-## Como Testar a API com Swagger
+## Como Testar a API com Swagger (Português)
 
 1.  Abra o Swagger UI no seu navegador: `http://localhost:[porta]/swagger`.
 
@@ -56,7 +56,7 @@ Este projeto demonstra a implementação do padrão de projeto Factory para integra
 
 7.  Verifique a resposta da API para confirmar o processamento do pagamento.
 
-## Estrutura do Projeto
+## Estrutura do Projeto (Português)
 
 * `Controllers`: Contém o `PagamentoController` que recebe as requisições de pagamento.
 * `Interfaces`: Define a interface `IMaquininhaPagamento`.
@@ -64,14 +64,94 @@ Este projeto demonstra a implementação do padrão de projeto Factory para integra
 * `Factories`: Contém a `MaquininhaPagamentoFactory` que instancia o serviço de pagamento correto.
 * `Models`: Contém os modelos de dados (por exemplo, `PagamentoRequest`).
 
-## Padrão Factory
+## Padrão Factory (Português)
 
 O projeto utiliza o padrão Factory para desacoplar a criação dos serviços de pagamento do `PagamentoController`. A `MaquininhaPagamentoFactory` recebe o tipo de maquininha como parâmetro e retorna a instância correta de `IMaquininhaPagamento`.
 
-## Contribuição
+## Contribuição (Português)
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar o projeto.
 
-## Licença
+## Licença (Português)
 
-[Sua Licença]
+brunopinheirobrazil
+
+---
+
+## Payment Machine Integration Project
+
+This project demonstrates the implementation of the Factory design pattern to integrate different payment machines (OuroBank and NuBank) in a .NET Core API.
+
+## Features
+
+* Integration with OuroBank and NuBank payment machines.
+* Use of the Factory pattern to instantiate the correct payment service based on the specified type.
+* RESTful API to process payments.
+* API documentation with Swagger.
+
+## Prerequisites
+
+* .NET Core SDK installed.
+* A code editor (Visual Studio, VS Code, etc.).
+* A REST client (Swagger, Postman, etc.).
+
+## How to Run the Project (English)
+
+1.  Clone the repository:
+
+    ```bash
+    git clone [URL inválido removido]
+    cd [nome do seu projeto]
+    ```
+
+2.  Restore NuGet packages:
+
+    ```bash
+    dotnet restore
+    ```
+
+3.  Run the project:
+
+    ```bash
+    dotnet run
+    ```
+
+4.  The API will be available at `http://localhost:[porta]`.
+
+## How to Test the API with Swagger (English)
+
+1.  Open the Swagger UI in your browser: `http://localhost:[porta]/swagger`.
+
+2.  Expand the payment endpoint (usually a GET endpoint).
+
+3.  Click on "Try it out".
+
+4.  In the "Parameters" section, fill in the following field:
+
+    * `tipo`: `OuroBank` or `NuBank`
+
+5.  Change the value of the `tipo` field to `OuroBank` or `NuBank` to test the different payment machine integrations.
+
+6.  Click on "Execute".
+
+7.  Check the API response to confirm payment processing.
+
+## Project Structure (English)
+
+* `Controllers`: Contains the `PagamentoController` that receives payment requests.
+* `Interfaces`: Defines the `IMaquininhaPagamento` interface.
+* `Servicos`: Contains the concrete implementations of the payment machines (OuroBank and NuBank).
+* `Factories`: Contains the `MaquininhaPagamentoFactory` that instantiates the correct payment service.
+* `Models`: Contains the data models (e.g., `PagamentoRequest`).
+
+## Factory Pattern (English)
+
+The project uses the Factory pattern to decouple the creation of payment services from the `PagamentoController`. The `MaquininhaPagamentoFactory` receives the machine type as a parameter and returns the correct instance of `IMaquininhaPagamento`.
+
+## Contributing (English)
+
+Contributions are welcome! Feel free to open issues and pull requests to improve the project.
+
+## License (English)
+
+brunopinheirobrazil
