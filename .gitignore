@@ -1,0 +1,55 @@
+# Arquivos de compilação
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.suo
+*.user
+*.userprefs
+*.vspscc
+
+# Pastas de pacotes
+packages/
+[Pp]ackages/
+
+# Pastas de cache e configurações do Visual Studio
+.vs/
+.vscode/
+*.DotSettings.user
+*.resharper.user*
+
+# Arquivos de configuração de usuário
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+*.secrets.json
+
+# Arquivos de saída de teste
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Arquivos do NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Arquivos do Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Arquivos de log
+*.log
+
+# Pastas de publicação
+publish/
+
+# Outros arquivos temporários
+*.tmp
+*.bak
+*.swp
+*.~
+[Tt]humbs.
