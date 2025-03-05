@@ -42,22 +42,15 @@ Este projeto demonstra a implementação do padrão de projeto Factory para integra
 
 1.  Abra o Swagger UI no seu navegador: `http://localhost:[porta]/swagger`.
 
-2.  Expanda o endpoint de pagamento (geralmente um endpoint POST).
+2.  Expanda o endpoint de pagamento (geralmente um endpoint GET).
 
 3.  Clique em "Try it out".
 
-4.  No corpo da requisição, forneça os seguintes dados em formato JSON:
+4.  Na seção "Parameters", preencha o seguinte campo:
 
-    ```json
-    {
-      "tipo": "OuroBank", // ou "NuBank"
-      "valor": 100.00,
-      "numeroCartao": "1234567890123456",
-      "cvv": "123"
-    }
-    ```
+    * `tipo`: `OuroBank` ou `NuBank`
 
-5.  Altere o valor do campo `"tipo"` para `"OuroBank"` ou `"NuBank"` para testar as diferentes integrações de maquininhas de pagamento.
+5.  Altere o valor do campo `tipo` para `OuroBank` ou `NuBank` para testar as diferentes integrações de maquininhas de pagamento.
 
 6.  Clique em "Execute".
 
