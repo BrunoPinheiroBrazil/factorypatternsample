@@ -17,19 +17,9 @@ namespace FactoryPatternExample.Factories
 
     public IMaquininhaCreditoService? CreateMaquininhaCreditoService(string tipo)
     {
-      switch (tipo.ToLower())
-      {
-        case "nubank":
-          var servicoNubank = _servicosMaquininhas.OfType<NuBank>().FirstOrDefault();
-          ValidaServico(servicoNubank);
-          return servicoNubank;
-        case "ourobank":
-          var servicoOuroBank = _servicosMaquininhas.OfType<OuroBank>().FirstOrDefault();
-          ValidaServico(servicoOuroBank);
-          return servicoOuroBank;
-        default:
-          throw new ArgumentException("Modelo de pagamento inválido!");
-      }
+      var service = _servicosMaquininhas.FirstOrDefault(s => s.GetMaquininhaServiceType(tipo));
+      ValidaServico(service);
+      return service;
     }
 
     private static Task ValidaServico(IMaquininhaCreditoService? service)
