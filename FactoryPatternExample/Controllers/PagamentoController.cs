@@ -1,5 +1,4 @@
 ﻿using FactoryPatternExample.Factories;
-using FactoryPatternExample.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FactoryPatternExample.Controllers

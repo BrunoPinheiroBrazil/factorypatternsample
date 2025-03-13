@@ -1,5 +1,4 @@
-﻿using FactoryPatternExample.Services;
-using FactoryPatternExample.Services.Interfaces;
+﻿using FactoryPatternExample.Services.Interfaces;
 
 namespace FactoryPatternExample.Factories
 {
